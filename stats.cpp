@@ -3,7 +3,7 @@
  
 using namespace std;
 
-Stats Statistics::ComputeStatistics(const std::vector<float>& ) {
+Stats Statistics::ComputeStatistics(const std::vector<float>& input) {
     
 	//Implement statistics here
     Statistics::Stats statsanswer;
