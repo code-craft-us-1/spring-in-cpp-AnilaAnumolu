@@ -5,22 +5,23 @@ using namespace std;
 
 Stats Statistics::ComputeStatistics(const std::vector<float>& ) {
     
-	Statistics::Stats st;
-    st.average = NAN;
-    st.max = NAN;
-    st.min = NAN;
-    float total = 0;
-  
-    if(arr.size()){
+	//Implement statistics here
+    Statistics::Stats statsanswer;
+    statsanswer.average = NAN;
+    statsanswer.max = NAN;
+    statsanswer.min = NAN;
+    float sum = 0;
  
-        for(auto i : arr){
-            total += i;
-            st.max = (st.max > i) ? st.max : i ;
-            st.min = (st.min < i) ? st.min : i ;
+    if(input.size()){
+ 
+        for(auto it : input){
+            sum += it;
+            statsanswer.max = (statsanswer.max > it) ? statsanswer.max : it ;
+            statsanswer.min = (statsanswer.min < it) ? statsanswer.min : it ;
         }
  
-        st.average = total/arr.size();
+        statsanswer.average = sum/input.size();
     }
  
-    return st;
+    return statsanswer;
 }
