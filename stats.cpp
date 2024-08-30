@@ -2,10 +2,9 @@
 #include <cmath>
  
 using namespace std;
-
-Stats Statistics::ComputeStatistics(const std::vector<float>& input) {
-    
-	//Implement statistics here
+ 
+Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& input) {
+    //Implement statistics here
     Statistics::Stats statsanswer;
     statsanswer.average = NAN;
     statsanswer.max = NAN;
@@ -24,4 +23,6 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& input) {
     }
  
     return statsanswer;
+ 
 }
+
