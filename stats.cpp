@@ -10,7 +10,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& ) {
     st.max = NAN;
     st.min = NAN;
     float total = 0;
-    int arr_size = arr.size();
+  
     if(arr.size()){
  
         for(auto i : arr){
@@ -19,7 +19,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& ) {
             st.min = (st.min < i) ? st.min : i ;
         }
  
-        st.average = total/arr_size;
+        st.average = total/arr.size();
     }
  
     return st;
